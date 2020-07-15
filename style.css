@@ -1,0 +1,471 @@
+:root {
+	--yasil: #54d154;
+}
+header {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	min-height: 100vh;
+	background: url('img/headerbg.jpg') top/cover;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+nav ul, nav>a, #search {
+	flex: 1 1 33%;
+}
+nav>a {
+	text-align: center;
+	padding: 6px;
+}
+
+nav ul {
+	display: flex;
+}
+
+nav li a {
+	display: inline-block; 
+	font: 1.3em Tahoma;
+	color: #FFF;
+	margin: 0 15px 0 0;
+	padding: 5px 0 0 0;
+    border-top: 5px solid rgba(0,0,0,0);
+    white-space: nowrap;
+}
+
+.active, nav li a:hover {
+	border-top: 5px solid var(--yasil);
+}
+
+#search {
+    text-align: right;
+    
+}
+
+#search input{
+	padding: 6px 10px;
+	margin: 12px;
+	border: none;
+	border-radius: 15px;
+	background: rgba(255,255,255,.5) url('img/search.png') 92%/20px no-repeat;
+	font: 1em Tahoma;
+	color: #111;
+}
+
+#teaser {
+    text-align: center;
+}
+
+#teaser h1 {
+    font-size: 55px;
+    color: #ffffff;
+    font-family: "Montserrat";
+    font-weight: 700;
+    margin-bottom: 30px;
+
+}
+
+#teaser button {
+    background-color: var(--yasil);
+    border: 1px solid var(--yasil);
+    border-radius: 30px;
+    color: #fff;
+    padding: 15px;
+    font-size: 22px;
+    font-family: "Proxima Nova";
+    text-transform: uppercase;
+}
+
+#scroll {
+	padding: 6px 10px;
+	margin: 12px;
+	border-radius: 15px;
+	background: rgba(255,255,255,.5);
+	font: 1em Tahoma;
+	color: #111;
+}
+
+/* --------- */
+#whatwedo {
+	background:#FFF;
+	text-align: center;
+	padding: 45px 0;
+}
+
+.row {
+	display: flex;
+	margin: 45px 70px 0 70px;
+
+
+}
+
+.row article {
+	margin: auto;
+}
+
+#whatwedo article div i {
+	font-size: 4em;
+	color: var(--yasil); 	
+}
+
+#whatwedo article div {
+	margin: auto;
+	width: 130px;
+	height: 130px;
+	background: #e1f3e1;
+	border-radius: 30px;
+	text-align: center;
+	padding: 34px 0 0 0;
+}
+
+#whatwedo article h3 {
+	margin: 25px 0 17px 0;
+}
+
+#whatwedo article button {
+	background: var(--yasil); 
+	font-size: 16px;
+	color: #ffffff;
+	font-family: "Proxima Nova";
+	font-weight: bold;
+	text-align: center;
+	border: 1px solid var(--yasil);
+	border-radius: 15px;
+	padding: 6px 10px;
+}
+
+/* --------- */
+#works {
+	background: var(--yasil);
+	text-align: center;
+	padding: 45px 0;
+}
+
+#works h2 {
+	font-size: 20px;
+	letter-spacing: 4px;
+	color: #207b20;
+	font-family: "Montserrat";
+	font-weight: 300;
+	text-align: center;
+}
+
+#works h6 {
+	font-size: 16px;
+	color: #2b9b2b;
+	font-family: "Open Sans";
+	font-weight: 300;
+	text-align: center;
+}
+
+ #works hr {
+	color: #0f490f !important ;
+	border: 1px solid #0f490f !important;
+
+} 
+
+#buttons {
+	margin: 45px ;
+	display: flex;
+	justify-content: center;
+}
+
+#buttons button {
+	padding: 7px 20px;
+	border: 1px solid #2b9b2b;
+	background: #FFF;
+	color: #2b9b2b;
+}
+#buttons button:first-child {
+	border-radius: 20px 0 0 20px;
+}
+#buttons button:last-child {
+	border-radius: 0 20px 20px 0;
+}
+.abutton {
+	background: #2b9b2b !important;
+	color: #FFF !important;
+}
+
+#imgs img{
+	margin: 0 10px 20px 10px;
+}
+
+#twobutton {
+	background: #2b9b2b;
+	font-size: 18px;
+	color: #ffffff;
+	font-family: "Proxima Nova";
+	text-align: center;
+	padding: 7px 13px;
+	border-radius: 15px;
+	border: 1px solid #2b9b2b;
+
+}
+
+/* --------- */
+#testim {
+	text-align: center;
+	padding: 45px 0;
+}
+
+#twoimg {
+	margin: 40px;
+}
+
+
+/* --------- */
+#clients {
+	text-align: center;
+	padding: 45px 0;
+	background: #f1f1f1;
+}
+
+#logos {
+	margin: 50px;
+}
+
+#logos img {
+	padding: 25px;
+	margin: 15px;
+}
+
+#ttt img {
+	padding: 40px;
+}
+
+#thbutton {
+	font-size: 18px;
+	color: #828181;
+	font-family: "Proxima Nova";
+	text-align: center;
+	margin-top: 25px;
+	padding: 8px 20px;
+	border-radius: 20px;
+	border: 0 ;
+
+}
+/* --------- */
+
+#team {
+	text-align: center;
+	padding: 45px 0;
+	background: var(--yasil);
+	
+	
+}
+
+
+
+#team h2 {
+	font-size: 20px;
+	letter-spacing: 4px;
+	color: #207b20;
+	font-family: "Montserrat";
+	font-weight: 300;
+	text-align: center;
+}
+
+#team h6 {
+	font-size: 16px;
+	color: #2b9b2b;
+	font-family: "Open Sans";
+	font-weight: 300;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+#team hr {
+	color: #0f490f !important ;
+	border: 1px solid #0f490f !important;
+	
+
+}
+
+/*
+#kruq {
+	margin-top: 50px;
+}
+
+#kruq img {
+	margin: 13px;
+}
+
+.palka {
+	margin: 0 80px !important;
+
+}
+*/
+
+#kruq {
+	display: flex;
+	max-width: 70%;
+	flex-direction: row;
+	margin: auto;
+	
+}
+
+.container {
+	display: flex;
+	margin: auto;
+	max-width: 20%;
+	flex-direction: column;
+	flex-wrap: wrap !important;
+	
+
+}
+
+.foto {
+	padding: 5px 10px;
+}
+.palka {
+    padding: 5px 73px;
+}
+
+.texx {
+	padding: 5px 0;
+	height: 35px;
+	max-width: 150px;
+	font-size: 16px;
+	color: #ffffff;
+	font-family: "Proxima Nova";
+	text-align: center;
+		
+}
+
+
+
+.iconka {
+	padding: 5px 30px;
+	background: rgba(255,255,255,.7);
+	border-radius: 15px;
+	font-size: 16px;
+
+
+}
+
+.fa-facebook-square { color: #274673 !important; cursor: pointer; font-size: 19px;}
+.fa-linkedin{ color: #72a9cd !important; cursor: pointer; font-size: 19px;}
+.fa-youtube-square { color: red !important; cursor: pointer; font-size: 19px;}
+
+
+#ccc {
+	background: #207b20;
+	text-align: center;
+
+}
+
+#end {
+	background-color: var(--yasil);
+    border: 1px solid var(--yasil);
+    border-radius: 30px;
+    color: #fff;
+    padding: 15px;
+    font-family: "Proxima Nova";
+	text-transform: uppercase;
+	margin: 25px;
+	font-size: 19px;
+	font-weight: 300;
+	text-align: center;
+	
+	
+}
+
+
+
+/* --------- */
+
+h2 {
+	font-size: 20px;
+	letter-spacing: 4px;
+	color: #828181;
+	font-family: "Montserrat";
+	font-weight: 300;
+	text-align: center;
+ }
+
+h6 {
+	font-size: 16px;
+	color: #b7b3b3;
+	font-family: "Open Sans";
+	font-weight: 300;
+	text-align: center;
+  }
+hr {
+	width: 43px ;
+}
+
+h3 {
+	font-size: 24px;
+	color: #828181;
+	font-family: "Proxima Nova";
+	font-weight: bold;
+
+}
+
+p {
+	width: 293px;
+	height: 89px;
+	font-size: 15px;
+	color: #828181;
+	font-family: "Montserrat";
+	font-weight: 300;
+
+}
+
+
+
+footer {
+	background: #333333;
+
+}
+
+#zzz {
+	text-align: center;
+}
+
+#footerend {
+	background: #333333;
+	
+}
+
+#fone {
+	max-width: 80%;
+	
+}
+
+.fftt {
+	max-width: 30%;
+	padding: 20px;
+}
+
+.fftt .iconka i {
+	text-align: center !important;
+	max-width: 10% !important;
+
+}
+
+@media only screen and (max-width: 768px) {
+    nav {
+		flex-direction: column;
+    }
+    nav ul {
+		flex-direction: column;
+		text-align: center;
+    }
+    nav>a {
+        order: -1;
+        padding-right: 20px;
+    }
+    #teaser h1 {
+		font-size: 2em;
+    }
+    #search {
+		text-align: center;
+	}
+} 
